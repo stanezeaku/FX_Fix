@@ -13,7 +13,7 @@ data class FxFix(
     @ColumnInfo(name = "margin")
     val margin: Int = 0,
     @ColumnInfo(name ="lot_size")
-    val lotSize: Double = 0.0,
+    val lotSize: Int = -1,
     @ColumnInfo(name = "trade_size")
     val tradeSize: Int = 0,
     @ColumnInfo(name = "lot_value")

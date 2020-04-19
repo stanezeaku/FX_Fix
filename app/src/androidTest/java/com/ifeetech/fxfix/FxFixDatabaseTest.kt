@@ -42,6 +42,6 @@ class FxFixDatabaseTest{
         val fxFix = FxFix()
         fxFixDao.insert(fxFix)
         val recentFxFix = fxFixDao.getRecentFxFix()
-        assertEquals(recentFxFix?.lotSize, 0)
+        assertEquals(recentFxFix?.lotSize, -1)
     }
 }
