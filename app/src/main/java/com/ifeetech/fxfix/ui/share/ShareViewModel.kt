@@ -6,8 +6,13 @@ import androidx.lifecycle.ViewModel
 
 class ShareViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is share Fragment"
+    private val _text = MutableLiveData<String>()
+
+    val text: LiveData<String>
+            get() =  _text
+
+    init {
+        _text.value = "This is share Fragment"
+
     }
-    val text: LiveData<String> = _text
 }
