@@ -1,10 +1,10 @@
-package com.ifeetech.fxfix.ui.share
+package com.ifeetech.fxfix.ui.info
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ShareViewModel : ViewModel() {
+class InfoViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>()
 
@@ -12,7 +12,6 @@ class ShareViewModel : ViewModel() {
             get() =  _text
 
     init {
-        _text.value = "This is share Fragment"
-
+        _text.value = "This is send Fragment"
     }
 }

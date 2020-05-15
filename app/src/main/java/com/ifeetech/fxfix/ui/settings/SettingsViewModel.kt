@@ -1,10 +1,10 @@
-package com.ifeetech.fxfix.ui.gallery
+package com.ifeetech.fxfix.ui.settings
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class SettingsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>()
 
@@ -12,6 +12,7 @@ class GalleryViewModel : ViewModel() {
             get() =  _text
 
     init {
-        _text.value = "This is gallery Fragment"
+        _text.value = "This is share Fragment"
+
     }
 }

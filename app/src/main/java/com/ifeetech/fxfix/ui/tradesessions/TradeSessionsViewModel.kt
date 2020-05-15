@@ -1,4 +1,4 @@
-package com.ifeetech.fxfix.ui.home
+package com.ifeetech.fxfix.ui.tradesessions
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,7 +8,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HomeViewModel : ViewModel() {
+class TradeSessionsViewModel : ViewModel() {
 
 
     private val _text = MutableLiveData<String>()

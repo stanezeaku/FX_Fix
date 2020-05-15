@@ -1,4 +1,4 @@
-package com.ifeetech.fxfix.ui.slideshow
+package com.ifeetech.fxfix.ui.settings
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.ifeetech.fxfix.databinding.FragmentSlideshowBinding
+import com.ifeetech.fxfix.databinding.FragmentSettingsBinding
 
-class SlideshowFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
-    private val model: SlideshowViewModel by activityViewModels()
+    private val model: SettingsViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,9 +18,9 @@ class SlideshowFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        val binding = FragmentSettingsBinding.inflate(inflater, container, false)
 
-        binding.slidesHowViewModel = model
+        binding.shareViewModel = model
         binding.lifecycleOwner = this
 
         return binding.root

@@ -1,4 +1,4 @@
-package com.ifeetech.fxfix.ui.tools
+package com.ifeetech.fxfix.ui.fxeducation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.ifeetech.fxfix.databinding.FragmentToolsBinding
+import com.ifeetech.fxfix.databinding.FragmentFxEducationBinding
 
-class ToolsFragment : Fragment() {
+class FxEducationFragment : Fragment() {
 
-    private val model: ToolsViewModel by activityViewModels()
+    private val model: FxEducationViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,9 +18,9 @@ class ToolsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = FragmentToolsBinding.inflate(inflater, container, false)
+        val binding = FragmentFxEducationBinding.inflate(inflater, container, false)
 
-        binding.toolsViewModel = model
+        binding.slidesHowViewModel = model
         binding.lifecycleOwner = this
 
         return binding.root

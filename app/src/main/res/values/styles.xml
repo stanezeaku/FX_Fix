@@ -6,15 +6,80 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorTertiary">@color/colorTextSecondary</item>
+        <item name="android:colorControlHighlight">@color/colorControlHighlight</item>
+
+
+
+
+        <!-- Window colors -->
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <item name="android:colorForegroundInverse">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+<!--        <item name="android:windowBackground">@color/colorPrimary</item>-->
+<!--        <item name="android:colorForeground">@color/colorAccent</item>-->
+<!--        <item name="android:colorForegroundInverse">@color/colorPrimary</item>-->
+<!--        <item name="android:colorBackground">@color/colorPrimary</item>-->
+        <item name="android:colorBackgroundCacheHint">@color/colorControlHighlight</item>
+        <item name="colorBackgroundFloating">@color/colorPrimary</item>
+
+        <!--        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>-->
+        <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorControlHighlight</item>
+        <!--        <item name="android:textColorTertiary">@color/abc_secondary_text_material_light</item>-->
+        <item name="android:textColorTertiaryInverse">@color/colorControlHighlight</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/colorAccent</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorControlHighlight</item>
+        <item name="android:textColorHintInverse">@color/colorControlHighlight</item>
+        <item name="android:textColorHighlight">@color/colorControlHighlight</item>
+
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorButtonNormal">@color/colorControlHighlight</item>
+        <item name="colorSwitchThumbNormal">@color/colorPrimary</item>
+
+
     </style>
+
+
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorTertiary">@color/colorTextSecondary</item>
+
+    </style>
+
+
+
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorTertiary">@color/colorTextSecondary</item>
+
+    </style>
 
 </resources>

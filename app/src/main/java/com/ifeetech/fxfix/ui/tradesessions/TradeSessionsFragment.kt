@@ -1,4 +1,4 @@
-package com.ifeetech.fxfix.ui.share
+package com.ifeetech.fxfix.ui.tradesessions
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.ifeetech.fxfix.databinding.FragmentShareBinding
+import com.ifeetech.fxfix.databinding.FragmentTradeSessionsBinding
 
-class ShareFragment : Fragment() {
+class TradeSessionsFragment : Fragment() {
 
-    private val model: ShareViewModel by activityViewModels()
+
+    private val model: TradeSessionsViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,10 +19,14 @@ class ShareFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = FragmentShareBinding.inflate(inflater, container, false)
+        val binding = FragmentTradeSessionsBinding.inflate(inflater, container, false)
 
-        binding.shareViewModel = model
+
+        binding.homeViewModel = model
+
         binding.lifecycleOwner = this
+
+
 
         return binding.root
     }

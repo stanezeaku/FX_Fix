@@ -1,10 +1,10 @@
-package com.ifeetech.fxfix.ui.tools
+package com.ifeetech.fxfix.ui.fxcalculator
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ToolsViewModel : ViewModel() {
+class FxCalculatorViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>()
 
@@ -12,6 +12,6 @@ class ToolsViewModel : ViewModel() {
             get() =  _text
 
     init {
-        _text.value = "This is tools Fragment"
+        _text.value = "This is gallery Fragment"
     }
 }
