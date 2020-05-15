@@ -3,6 +3,9 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+
+<!--        Makes the Status bar Icons Light dark color-->
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
 </resources>
