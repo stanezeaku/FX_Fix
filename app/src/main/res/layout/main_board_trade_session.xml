@@ -110,22 +110,15 @@
                     android:textAlignment="center"
                     android:textColor="#FFFFFF" />
 
-                <TextView
+                <TextClock
                     android:id="@+id/card_text_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="HR:MM:SS"
+                    android:format12Hour="@string/time_clock_format_main"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF" />
 
-                <TextView
-                    android:id="@+id/card_text_three"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="SUN 10 MAY (GST)"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
