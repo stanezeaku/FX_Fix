@@ -1,5 +1,6 @@
 package com.ifeetech.fxfix
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -10,8 +11,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
 import com.ifeetech.fxfix.databinding.ActivityMainBinding
+import com.ifeetech.fxfix.ui.ChartActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val fab = binding.include.fab
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        fab.setOnClickListener {
+            val intent = Intent(applicationContext, ChartActivity::class.java)
+            startActivity(intent)
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView

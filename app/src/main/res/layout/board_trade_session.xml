@@ -17,13 +17,16 @@
 
         <TextView
             android:id="@+id/text_one"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/blue_background"
+            android:background="@drawable/red_background"
             android:padding="16dp"
-            android:text="OPEN AT HR:MM AM"
+            android:text="Close"
+            android:textAllCaps="true"
+            android:textSize="24dp"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,26 +53,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/image_one"
             app:layout_constraintTop_toBottomOf="@+id/text_one" />
-
-        <!--        <TextClock-->
-        <!--            android:id="@+id/text_clock"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="16dp"-->
-        <!--            android:layout_marginEnd="16dp"-->
-        <!--            android:layout_marginBottom="4dp"-->
-        <!--            android:format12Hour="hh:mm:ss a"-->
-        <!--            android:timeZone="Europe/London"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintHorizontal_bias="1.0"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/text_one"-->
-        <!--            app:layout_constraintVertical_bias="1.0" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

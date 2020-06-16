@@ -6,6 +6,8 @@
     <color name="colorTextPrimary">#2699FB</color>
     <color name="colorTextSecondary">#2699FB</color>
     <color name="colorControlHighlight">#D9EAF8</color>
+    <color name="backgroundRed">#F23B5F</color>
+    <color name="backgroundGreen">#32e510</color>
 
 
 </resources>
